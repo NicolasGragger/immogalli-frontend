@@ -1,0 +1,13 @@
+:root {
+    --primary: #dbe1ec;
+    --secondary: #FFFFFF;
+    --accent1: #3E404A;
+    --accent1-fade: rgba(240, 240, 241, 0.2);
+    --accent1-fade2: #4F515A;
+
+    --popup-bg: rgba(62, 64, 74, 0.7);
+    --popup-bg-hover: rgba(62, 64, 74, 0.6);
+
+    --shadow: #C0C4CE;
+    --shadow2: #0a0404;
+}

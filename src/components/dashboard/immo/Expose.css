@@ -1,0 +1,83 @@
+#expose .background{
+    display: block;
+    position: fixed;
+
+    top: 0;
+    left: 0;
+
+    width: 100vw;
+    height: 100vh;
+    
+    background-color: var(--popup-bg);
+
+    z-index: 989;
+}
+
+#expose .background:hover{
+    background-color: var(--popup-bg-hover);
+}
+
+#expose .content {
+    background-color: var(--primary);
+
+    overflow: hidden;
+    display: block;
+    position: fixed;
+
+    top: 50vh; 
+    left: 50vw;
+
+    margin-left: -40vw;
+    margin-top: -40vh;
+
+    width: 80vw;
+    height: 80vh;
+
+    border-radius: 10px;
+
+    z-index: 999;
+}
+
+#expose svg {
+    fill: var(--accent1);
+
+    position: absolute;
+
+    width: 30px;
+    height: 30px;
+
+    margin: 10px;
+}
+
+#expose svg:hover {
+    fill: var(--accent1-fade2);
+}
+
+#expose .add {
+    right: 40px;
+}
+
+#expose .close {
+    right: 0px;
+}
+#expose input{
+    background-color: var(--primary);
+
+    text-align: left;
+    font-size: 25px;
+
+    position: absolute;
+
+    display: block;
+
+    height: 50px;
+    width: 90%;
+
+    margin-left: 15px;
+}
+
+#expose embed {
+    margin-top: 50px;
+    width: 100%;
+    height: 98%;
+}

@@ -1,0 +1,90 @@
+#blueprint {
+    background-color: var(--accent1);
+    box-shadow: 0px 0px 40px 7px var(--shadow);
+
+    display: inline-block;
+    overflow: hidden;
+
+    width: 250px;
+    height: 330px;
+    
+    margin: 20px;
+
+    border-radius: 10px;
+}
+
+#blueprint img {
+    display: block;
+    
+    width: 250px;
+    height: 150px;
+
+    z-index: 1000;
+}
+
+
+#blueprint img:hover {
+    background-color: var(--accent1-fade);
+    -webkit-filter: brightness(1.1);
+    filter: brightness(1.1);
+}
+
+#blueprint input {
+    color: var(--accent1);
+
+    text-align: center;
+
+    width: 100%;
+
+    font-size: 17px;
+}
+
+#blueprint [name=location] {
+    font-size: 20px;
+
+    height: 25px;
+
+    padding-top: 10px;
+    padding-bottom: 15px;
+}
+
+#blueprint [name=price] {
+    font-size: 30px;
+
+    height: 40px;
+
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+#blueprint .controlbar {
+    position: relative;
+    bottom: 30px;
+
+    width: 250px;
+    height: 30px;
+
+    text-align: center;
+}
+
+#blueprint .button {
+    fill: var(--secondary);
+
+    display: inline-block;
+
+    height: 20px;
+    width: 20px;
+
+    padding: 5px 20px 5px 20px;
+}
+
+#blueprint .button:hover {
+    fill: var(--accent1-fade);
+}
+
+#blueprint .status {
+    width: 0px;
+    height: 30px;
+
+    background-color: #94D34C;
+}
