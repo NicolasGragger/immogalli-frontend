@@ -18,14 +18,12 @@ export class Login extends Component {
         .catch((err) => console.log(err));
   }
 
-  renderRedirect = () => {
+  componentDidMount() {
     request('GET', 'api/verify')
-        .then(() => this.props.history.push(`/login`));
+        .then(() => this.props.history.push(`/dashboard`));
   }
 
   render() {
-    this.renderRedirect();
-
     return (
       <div id='login'>    
         <input 

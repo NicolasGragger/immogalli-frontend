@@ -5,14 +5,12 @@ import Immo from './immo/Immo'
 
 
 export class Login extends Component {  
-    renderRedirect = () => {
+    componentDidMount() {
         request('GET', 'api/verify')
             .catch(() => this.props.history.push(`/login`));
     }
 
     render() {
-        this.renderRedirect();
-
         return(
             <div>
                 <Navbar/>
