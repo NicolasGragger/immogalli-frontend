@@ -7,10 +7,12 @@ import Immo from './immo/Immo'
 export class Login extends Component {  
     renderRedirect = () => {
         request('GET', 'api/verify')
-            .catch((err) => this.props.history.push(`/login`));
+            .catch(() => this.props.history.push(`/login`));
     }
 
     render() {
+        this.renderRedirect();
+
         return(
             <div>
                 <Navbar/>

@@ -1,5 +1,5 @@
 import React from 'react';
-import { BrowserRouter as Router, Route} from 'react-router-dom';
+import { BrowserRouter as Router, Route, Redirect} from 'react-router-dom';
 import Login from './components/login/Login';
 import Dashboard from './components/dashboard/Dashboard';
 
@@ -10,6 +10,7 @@ function App() {
   return (
     <div className="App">
       <Router>
+        <Redirect exact from="/" to="/login"/>
         <Route path="/login" component={Login}/>
         <Route path="/dashboard" component={Dashboard}/>
       </Router>
