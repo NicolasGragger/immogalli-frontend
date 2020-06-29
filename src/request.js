@@ -1,6 +1,6 @@
 import Cookies from 'js-cookie';
 
-const endpoint = 'http://185.228.139.30:2604/';
+const endpoint = 'https://galli-data.ddns.net:80/';
 
 const request = (method, url, data, progress) => {
     return new Promise((resolve, reject) => {
